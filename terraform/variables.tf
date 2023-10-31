@@ -20,3 +20,8 @@ variable "bucket_name" {
   description = "S3 bucket for web app"
   type        = string
 }
+
+variable "frontend_domain" {
+  description = "Frontend domain"
+  type        = string
+}
