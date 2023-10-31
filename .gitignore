@@ -28,4 +28,5 @@ coverage
 *.sw?
 
 terraform/.terraform
+terraform/secret.tfvars
 *.tfstate*
