@@ -15,3 +15,8 @@ variable "secret_key" {
   type        = string
   sensitive   = true
 }
+
+variable "backend_bucket" {
+  description = "Terraform backend bucket"
+  type        = string
+}
