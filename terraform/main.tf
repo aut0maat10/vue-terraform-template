@@ -14,3 +14,16 @@ provider "aws" {
   secret_key = var.secret_key
 }
 
+resource "aws_s3_bucket" "web_app" {
+  bucket = var.bucket_name
+}
+
+resource "aws_s3_bucket_website_configuration" "web_app_config" {
+  bucket = aws_s3_bucket.web_app.bucket
+  index_document {
+    suffix = "index.html"
+  }
+  error_document {
+    key = "error.html"
+  }
+}

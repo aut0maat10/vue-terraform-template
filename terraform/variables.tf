@@ -16,7 +16,7 @@ variable "secret_key" {
   sensitive   = true
 }
 
-variable "backend_bucket" {
-  description = "Terraform backend bucket"
+variable "bucket_name" {
+  description = "S3 bucket for web app"
   type        = string
 }
