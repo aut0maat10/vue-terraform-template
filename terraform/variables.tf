@@ -25,3 +25,8 @@ variable "frontend_domain" {
   description = "Frontend domain"
   type        = string
 }
+
+variable "www_frontend_domain" {
+  description = "Frontend domain"
+  type        = string
+}
